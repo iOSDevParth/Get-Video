@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B14777E22A1226A00A52A82 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B14777D22A1226A00A52A82 /* ViewController1.swift */; };
 		9C4FC00722A0FF94001C45C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4FC00622A0FF94001C45C4 /* AppDelegate.swift */; };
 		9C4FC00922A0FF94001C45C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4FC00822A0FF94001C45C4 /* ViewController.swift */; };
 		9C4FC00C22A0FF94001C45C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C4FC00A22A0FF94001C45C4 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B14777D22A1226A00A52A82 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		1B14777F22A1237500A52A82 /* videoDownload.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = videoDownload.entitlements; sourceTree = "<group>"; };
 		9C4FC00322A0FF94001C45C4 /* videoDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = videoDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C4FC00622A0FF94001C45C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C4FC00822A0FF94001C45C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,8 +57,10 @@
 		9C4FC00522A0FF94001C45C4 /* videoDownload */ = {
 			isa = PBXGroup;
 			children = (
+				1B14777F22A1237500A52A82 /* videoDownload.entitlements */,
 				9C4FC00622A0FF94001C45C4 /* AppDelegate.swift */,
 				9C4FC00822A0FF94001C45C4 /* ViewController.swift */,
+				1B14777D22A1226A00A52A82 /* ViewController1.swift */,
 				9C4FC00A22A0FF94001C45C4 /* Main.storyboard */,
 				9C4FC00D22A0FF97001C45C4 /* Assets.xcassets */,
 				9C4FC00F22A0FF97001C45C4 /* LaunchScreen.storyboard */,
@@ -96,6 +101,11 @@
 				TargetAttributes = {
 					9C4FC00222A0FF94001C45C4 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B14777E22A1226A00A52A82 /* ViewController1.swift in Sources */,
 				9C4FC00922A0FF94001C45C4 /* ViewController.swift in Sources */,
 				9C4FC00722A0FF94001C45C4 /* AppDelegate.swift in Sources */,
 			);
@@ -282,7 +293,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = videoDownload/videoDownload.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9AQBBCK66L;
 				INFOPLIST_FILE = videoDownload/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,7 +312,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = videoDownload/videoDownload.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9AQBBCK66L;
 				INFOPLIST_FILE = videoDownload/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

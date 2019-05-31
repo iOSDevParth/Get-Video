@@ -11,6 +11,24 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+<!--    -->
+   <key>LSSupportsOpeningDocumentsInPlace</key>
+    <true/>
+    <key>UIFileSharingEnabled</key>
+    <true/>
+    <key>NSUbiquitousContainers</key>
+    <dict>
+        <key>iCloud.com.tiborbodecs.teszt</key>
+        <dict>
+            <key>NSUbiquitousContainerIsDocumentScopePublic</key>
+            <false/>
+            <key>NSUbiquitousContainerName</key>
+            <string>Hungama Kids</string>
+            <key>NSUbiquitousContainerSupportedFolderLevels</key>
+            <string>New</string>
+        </dict>
+    </dict>
+    <!--    -->
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
