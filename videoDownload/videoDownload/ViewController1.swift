@@ -53,5 +53,11 @@ class ViewController1: UIViewController, URLSessionDelegate, URLSessionDownloadD
         }
         
     }
+    
+    //Download Progress
+    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
+        print("---> Downloaded", totalBytesWritten)
+        print("---> Total size of file", totalBytesExpectedToWrite)
+    }
 
 }
